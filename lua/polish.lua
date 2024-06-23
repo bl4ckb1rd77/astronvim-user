@@ -20,8 +20,8 @@
 -- autostart nvim-tree
 --
 vim.api.nvim_create_autocmd("VimEnter", {
-  command = "set nornu nonu | Neotree toggle",
+  command = "set nornu nu | Neotree toggle",
 })
 vim.api.nvim_create_autocmd("BufEnter", {
-  command = "set rnu nu",
+  command = "set nornu nu",
 })

@@ -1,6 +1,10 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
   opts = {
+    window = {
+      position = "left",
+      width = 50,
+    },
     filesystem = {
       filtered_items = {
         visible = true,

@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
@@ -80,6 +80,19 @@ return {
         -- disable for .vim files, but it work for another filetypes
         Rule("a", "a", "-vim")
       )
+    end,
+  },
+
+  {
+    "rebelot/heirline.nvim",
+    opts = function(_, opts)
+      local status = require "astroui.status"
+      opts.tabline[2] = status.heirline.make_buflist {
+        -- add buffer number
+        { provider = function(self) return (" %d."):format(self.bufnr) end },
+        -- rest of tabline file info
+        status.component.tabline_file_info(),
+      }
     end,
   },
 }

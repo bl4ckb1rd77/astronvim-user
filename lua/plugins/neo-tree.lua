@@ -17,6 +17,9 @@ return {
           ".DS_Store",
         },
         never_show = {},
+        never_show_by_pattern = { -- uses glob style patterns
+          ".null-ls_*",
+        },
       },
     },
   },

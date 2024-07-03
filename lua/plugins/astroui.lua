@@ -11,7 +11,10 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    colorscheme = "nord",
+    colorscheme = "nordfox",
+    -- colorscheme = "eldritch",
+    -- colorscheme = "tokyonight-moon",
+    -- colorscheme = "nord",
     -- colorscheme = "catppuccin-macchiato",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
@@ -36,7 +39,7 @@ return {
       LSPLoading9 = "⠇",
       LSPLoading10 = "⠏",
       -- add new user interface icon
-      BufferClose = "✗",
+      BufferClose = "",
     },
   },
 }

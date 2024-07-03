@@ -25,3 +25,6 @@ vim.api.nvim_create_autocmd("VimEnter", {
 vim.api.nvim_create_autocmd("BufEnter", {
   command = "set nornu nu",
 })
+
+vim.api.nvim_set_keymap("n", "<S-Tab>", ":bprev<CR>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<Tab>", ":bnext<CR>", { noremap = true })

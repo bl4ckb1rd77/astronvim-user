@@ -11,7 +11,7 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    colorscheme = "nordfox",
+    colorscheme = "tokyonight-moon",
     -- colorscheme = "eldritch",
     -- colorscheme = "tokyonight-moon",
     -- colorscheme = "nord",
